@@ -1,0 +1,103 @@
+$dark-back: #0A2647;
+$dark-sormei: #144272;
+$level3: #205295;
+$inner: #35A29F;
+
+@mixin every() {
+    /* margin-left: 8px; */
+    float: left;
+    margin-top: 13px;
+    font-size: 17px;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: white;
+    background-color: $dark-back;
+}
+
+.container {
+    width: 100vw;
+    float: right;
+
+    &-main {
+        width: 95%;
+        margin: 1.5% 2.5%;
+        border-radius: 10px;
+        background-color: $dark-sormei;
+        float: right;
+    }
+}
+
+
+.top5 {
+    width: 46%;
+    background-color: $level3;
+    display: inline;
+    border-radius: 10px;
+    margin: 1% 2%;
+    float: left;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.top5-inner {
+    width: 93%;
+    margin: 10px 2.5%;
+    background-color: $inner;
+    border-radius: 5px;
+    padding: 1%;
+    float: left;
+    display: inline;
+
+    & > *{
+        width: 19.7%;
+    }
+
+    svg {
+        float: left;
+        width: 48px !important; 
+        margin: 0 30px 0 10px;
+    }
+
+    .inner-name {
+        @include every();
+    }
+
+    .inner-price {
+        @include every();
+        /* margin-left: 70px; */
+    }
+    .inner-change{
+        @include every();
+        /* margin-left: 50px; */
+    }
+    .inner-button{
+        @include every();
+        
+        padding: 2%;
+        border: none;
+        background-color: $dark-back;
+        color: white;
+        border-radius: 5px;
+        /* margin-left: 35px; */
+        margin-top: 2px;
+        cursor: pointer;
+        transition: 0.5s;
+        text-align: center;
+        &:hover{
+            background-color: white;
+            color: $dark-back;
+        }
+    }
+}
+
+.uy1{
+    cursor: default !important;
+    user-select: none !important;
+    &:hover{
+        background-color: darkred !important;
+        color: white !important;
+    }
+}
