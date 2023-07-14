@@ -51,13 +51,13 @@ body {
     float: left;
     display: inline;
 
-    & > *{
+    &>* {
         width: 19.7%;
     }
 
     svg {
         float: left;
-        width: 48px !important; 
+        width: 48px !important;
         margin: 0 30px 0 10px;
     }
 
@@ -69,13 +69,15 @@ body {
         @include every();
         /* margin-left: 70px; */
     }
-    .inner-change{
+
+    .inner-change {
         @include every();
         /* margin-left: 50px; */
     }
-    .inner-button{
+
+    .inner-button {
         @include every();
-        
+
         padding: 2%;
         border: none;
         background-color: $dark-back;
@@ -86,18 +88,72 @@ body {
         cursor: pointer;
         transition: 0.5s;
         text-align: center;
-        &:hover{
+
+        &:hover {
             background-color: white;
             color: $dark-back;
         }
     }
 }
 
-.uy1{
+.uy1 {
     cursor: default !important;
     user-select: none !important;
-    &:hover{
+
+    &:hover {
         background-color: darkred !important;
         color: white !important;
+    }
+}
+
+footer {
+    background-color: darkslategrey;
+    height: 150px;
+    width: calc(100% - (15px * 2));
+    float: left;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 15px;
+    margin-top: 30px;
+    display: flex;
+
+
+    table {
+        width: 100%;
+        height: 100%;
+        float: left;
+
+        tr {
+            height: calc(100% / 3);
+
+            td {
+                width: calc((100% / 3) - 1%);
+                height: 100%;
+                display: flex;
+                align-items: end;
+                justify-content: left;
+                float: left;
+                flex-wrap: wrap;
+
+                .ins a {
+                    background: #f09433;
+                    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+                    color: white;
+                    border-radius: 10px;
+                    padding: 1px 8px 2px;
+                    cursor: pointer;
+                    transition: 1s;
+                    text-decoration: none;
+                    font-size: 20px;
+                    &:hover{
+                        background: white;
+                        color: black;
+                    }
+
+                }
+            }
+        }
     }
 }

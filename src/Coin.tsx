@@ -1,4 +1,5 @@
 import golem from './img/golem.png';
+import threshold from './img/Threshold.png';
 class coin {
 
     public bitcoin() {
@@ -166,6 +167,32 @@ class coin {
             </>
         )
     }
+    public Threshold() {
+        return (
+            <>
+                <li className='top5-inner'>
+                    <img src={threshold} alt="Threshold icon" style={{ float: 'left', width: '48px', height: '48px', margin: '0 30px 0 10px' }} />
+                    <div className='inner-name'>Threshold</div>
+                    <div className='inner-price'>0.0241 $</div>
+                    <div className='inner-change' style={{ color: 'darkred' }}>-2.50 %</div>
+                    <button className='inner-button'>Buy/Sell</button>
+                </li>
+            </>
+        )
+    }
+    public BitCoinCash() {
+        return (
+            <>
+                <li className='top5-inner'>
+                    <svg height={48} width={48} version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 788 788" xmlSpace="preserve"> <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t.st023{fill:#0AC18E;}\n\t.st123{fill:#FFFFFF;}\n" }} /> <circle className="st023" cx={394} cy={394} r={394} /> <path id="symbol_1_" className="st123" d="M516.9,261.7c-19.8-44.9-65.3-54.5-121-45.2L378,147.1L335.8,158l17.6,69.2c-11.1,2.8-22.5,5.2-33.8,8.4L302,166.8l-42.2,10.9l17.9,69.4c-9.1,2.6-85.2,22.1-85.2,22.1l11.6,45.2c0,0,31-8.7,30.7-8c17.2-4.5,25.3,4.1,29.1,12.2l49.2,190.2c0.6,5.5-0.4,14.9-12.2,18.1c0.7,0.4-30.7,7.9-30.7,7.9l4.6,52.7c0,0,75.4-19.3,85.3-21.8l18.1,70.2l42.2-10.9l-18.1-70.7c11.6-2.7,22.9-5.5,33.9-8.4l18,70.3l42.2-10.9l-18.1-70.1c65-15.8,110.9-56.8,101.5-119.5c-6-37.8-47.3-68.8-81.6-72.3C519.3,324.7,530,297.4,516.9,261.7L516.9,261.7z M496.6,427.2c8.4,62.1-77.9,69.7-106.4,77.2l-24.8-92.9C394,404,482.4,372.5,496.6,427.2z M444.6,300.7c8.9,55.2-64.9,61.6-88.7,67.7l-22.6-84.3C357.2,278.2,426.5,249.6,444.6,300.7z" /> </svg>
+                    <div className='inner-name'>bitcoin cash</div>
+                    <div className='inner-price'>275 $</div>
+                    <div className='inner-change' style={{ color: 'darkred' }}>-4.06 %</div>
+                    <button className='inner-button'>Buy/Sell</button>
+                </li>
+            </>
+        )
+    }
 
 
     public show(chi: string) {
@@ -205,7 +232,11 @@ class coin {
         else if (chi === 'most-down') {
             return (
                 <>
+                    {this.BitCoinCash()}
                     {this.Balancer()}
+                    {this.Threshold()}
+                    {this.etherium()}
+                    {this.BNB()}
                 </>
             )
         }
