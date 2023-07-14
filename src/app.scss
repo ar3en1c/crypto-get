@@ -10,6 +10,15 @@ $inner: #35A29F;
     font-size: 17px;
 }
 
+@mixin logos() {
+    border-radius: 10px;
+    padding: 1px 8px 2px;
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 body {
     margin: 0 !important;
     padding: 0 !important;
@@ -141,19 +150,37 @@ footer {
                     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
                     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
                     color: white;
-                    border-radius: 10px;
-                    padding: 1px 8px 2px;
-                    cursor: pointer;
-                    transition: 1s;
-                    text-decoration: none;
-                    font-size: 20px;
-                    &:hover{
+                    @include logos();
+
+                    &:hover {
                         background: white;
                         color: black;
                     }
 
                 }
+
+                .foot a {
+                    @include logos();
+                    background-color: #202124;
+                    color: #FFF;
+
+                    &:hover {
+                        background-color: #FFF;
+                        color: #202124;
+                    }
+
+                    &:visited {
+                        color: #FFF;
+                    }
+                }
             }
         }
     }
+}
+.git2{
+    justify-content: right;
+}
+.myName{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
