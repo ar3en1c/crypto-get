@@ -1,5 +1,6 @@
 import golem from './img/golem.png';
 import threshold from './img/Threshold.png';
+import { Link } from 'react-router-dom';
 class coin {
 
     public bitcoin() {
@@ -12,7 +13,7 @@ class coin {
                     <div className='inner-name'>BitCoin</div>
                     <div className='inner-price'>30,000 $</div>
                     <div className='inner-change' style={{ color: 'lightgreen' }}>+0.40 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.bitcoin.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -27,7 +28,7 @@ class coin {
                     <div className='inner-name'>Ethereum</div>
                     <div className='inner-price'>1,882 $</div>
                     <div className='inner-change' style={{ color: 'darkred' }}>-0.70 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.etherium.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -40,7 +41,7 @@ class coin {
                     <div className='inner-name'>Binance Coin</div>
                     <div className='inner-price'>247 $</div>
                     <div className='inner-change' style={{ color: 'darkred' }}>-0.30 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.BNB.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -56,7 +57,7 @@ class coin {
                     <div className='inner-name'>LiteCoin</div>
                     <div className='inner-price'>101 $</div>
                     <div className='inner-change' style={{ color: 'lightgreen' }}>+3.20 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.LiteCoin.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -69,7 +70,7 @@ class coin {
                     <div className='inner-name'>DogeCoin</div>
                     <div className='inner-price'>0.654800 $</div>
                     <div className='inner-change' style={{ color: 'lightgreen' }}>+0.30 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.Doge.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -82,7 +83,7 @@ class coin {
                     <div className='inner-name'>Compound</div>
                     <div className='inner-price'>72 $</div>
                     <div className='inner-change' style={{ color: 'lightgreen' }}>+8.30 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.Compound.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -95,7 +96,7 @@ class coin {
                     <div className='inner-name'>Convex</div>
                     <div className='inner-price'>4.1 $</div>
                     <div className='inner-change' style={{ color: 'lightgreen' }}>+5.00 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.Convex.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -108,7 +109,7 @@ class coin {
                     <div className='inner-name'>Aragon</div>
                     <div className='inner-price'>4.2 $</div>
                     <div className='inner-change' style={{ color: 'lightgreen' }}>+4.50 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.Aragon.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -121,7 +122,7 @@ class coin {
                     <div className='inner-name'>Golem</div>
                     <div className='inner-price'>0.21 $</div>
                     <div className='inner-change' style={{ color: 'lightgreen' }}>+6.60 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.Golem.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -134,7 +135,7 @@ class coin {
                     <div className='inner-name'>EOS</div>
                     <div className='inner-price'>0.759 $</div>
                     <div className='inner-change' style={{ color: 'lightgreen' }}>+4.45 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.EOS.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -149,7 +150,7 @@ class coin {
                     <div className='inner-name'>Tether</div>
                     <div className='inner-price'>1.00 $</div>
                     <div className='inner-change' style={{ color: 'darkgray' }}>+0.00 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.Tether.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -162,7 +163,7 @@ class coin {
                     <div className='inner-name'>Balancer</div>
                     <div className='inner-price'>4.818 $</div>
                     <div className='inner-change' style={{ color: 'darkred' }}>-2.90 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.Balancer.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -175,7 +176,7 @@ class coin {
                     <div className='inner-name'>Threshold</div>
                     <div className='inner-price'>0.0241 $</div>
                     <div className='inner-change' style={{ color: 'darkred' }}>-2.50 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.Threshold.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )
@@ -188,7 +189,7 @@ class coin {
                     <div className='inner-name'>bitcoin cash</div>
                     <div className='inner-price'>275 $</div>
                     <div className='inner-change' style={{ color: 'darkred' }}>-4.06 %</div>
-                    <button className='inner-button'>Buy/Sell</button>
+                    <Link className='inner-button' to={`/crypto/${this.BitCoinCash.name}`}>Buy/Sell</Link>
                 </li>
             </>
         )

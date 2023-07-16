@@ -26,6 +26,28 @@ body {
     background-color: $dark-back;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #14fffb #000000;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #14fffb;
+    border-radius: 5px;
+    border: 2px none #ff0000;
+  }
+
 .container {
     width: 100vw;
     float: right;
@@ -86,6 +108,7 @@ body {
 
     .inner-button {
         @include every();
+        text-decoration: none;
 
         padding: 2%;
         border: none;
@@ -177,10 +200,18 @@ footer {
         }
     }
 }
-.git2{
+
+.git2 {
     justify-content: right;
 }
-.myName{
+
+.mynamediv {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.myName {
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

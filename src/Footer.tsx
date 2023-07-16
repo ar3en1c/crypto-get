@@ -7,9 +7,9 @@ function Footer() {
                 <table>
                     <tr>
                         <td>
-                            <span className="myName">Erfan Ghandi</span>
+                            
                         </td>
-                        <td></td>
+                        <td><div className="mynamediv"><span className="myName">Erfan Ghandi</span></div></td>
                         <td></td>
                     </tr>
                     <tr></tr>

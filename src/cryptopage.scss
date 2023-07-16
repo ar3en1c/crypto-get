@@ -1,0 +1,36 @@
+$wi : calc(100% - (2.5% * 2));
+.titr{
+    font-size: 40px;
+    width: $wi;
+    padding: 2.5%;
+    text-align: center;
+    float: left;
+}
+.image{
+    float: left;
+    width: $wi;
+    padding: 2.5%;
+    text-align: center;
+
+    img{
+        width: 90%;
+    }
+}
+.back{
+    width: 15%;
+    padding: 1% 2% 1.5%;
+    text-decoration: none;
+    background-color: #0A2647;
+    color: white;
+    border-radius: 5px;
+    margin: 20px 0 50px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+}
+.back-p{
+    float: left;
+    display: flex;
+    justify-content: center;
+    width: $wi;
+}
