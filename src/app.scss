@@ -8,6 +8,9 @@ $inner: #35A29F;
     float: left;
     margin-top: 13px;
     font-size: 17px;
+    @media (max-width: 438px) {
+        font-size: 15px;
+    }
 }
 
 @mixin logos() {
@@ -71,6 +74,9 @@ body {
     float: left;
     list-style-type: none;
     padding-left: 0;
+    @media (max-width: 902px) {
+        width: 95%;
+    }
 }
 
 .top5-inner {
@@ -83,7 +89,25 @@ body {
     display: inline;
 
     &>* {
-        width: 19.7%;
+        width: 18%;
+        @media (max-width: 1200px) {
+            width: 18%;
+        }
+
+        @media (max-width: 900px) {
+            width: 20%;
+        }
+
+        @media (max-width: 655px) {
+            width: 18%;
+        }
+
+        @media (max-width: 438px) {
+            width: 17%;
+        }
+        @media (max-width: 365px) {
+            width: 16%;
+        }
     }
 
     svg {
